@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="includes/css/styles.css">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <title>Awakening</title>
+</head>
+ 
+<body>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="header">
+                <img class="logo" src="imgs/logo.png" alt="  Awakening">
+                
+                <div class="session">
+                    <button id="loginBtn" class="btn1">Login</button>
+                    <button id="regBtn" class="btn1">Register</button>
+                </div>
+            </div>
+            <div class="division">
+                <div class="logoname">
+                    <a href="#" class="op">Awakening</a>
+                </div>
+                <div class="menu">
+                    <a href="yogamnu.html" class="op">Yoga</a>
+                    <a href="#" class="op">Special Events</a>
+                    <a href="#" class="op">Stay with us</a>
+                    <a href="#" class="op">About</a>
+                </div>
+                
+            </div>
+            
+        </div><div class="content">
+                <div class="left">
+                  <p class="text-box">"The spiritual journey begins with the balance between the mind and the body."</p>
+                </div>
+                <div class="right">
+                  <button class="btn">~ Yoga Sessions ~</button>
+                  <button class="btn">~ The Journey ~</button>
+                  <button class="btn">~ Stay with us ~</button>
+                </div>
+              </div>
+    </div>
+
+<!-- Modal  -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1>Welcome back</h1>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit" class="btn2">Submit</button>
+        <button type="forgot" class="btn2">Forgot Pass</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="regModal" class="modal">
+    <div class="regModal-content">
+      <span class="close">&times;</span>
+      <div class="left">
+        <p class="text-box">"Balance is the spiritual journey between body and mind."</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>    
+</body>
+ 
+</html>

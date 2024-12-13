@@ -1,0 +1,275 @@
+@font-face{
+    font-family: 'ImperialScript';
+    src: url('../fonts/ImperialScript-Regular.ttf');
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: 'Dancing';
+    src: url('../fonts/DancingScriptVary.ttf');
+    font-weight: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    font-family: 'Dancing';
+}
+
+h1 {
+    color: rgb(219, 125, 140);
+}
+
+h2 {
+    color: gold;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, button {
+    display: block;
+    margin: 10px 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ 
+.banner {
+    height: 100vh; 
+    background-image: url('../../imgs/AIShiva.png'); 
+    background-position: center; 
+    background-size: cover; 
+    color: white;
+}
+ 
+.wrapper {
+    max-width: 2400px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.banner .wrapper{
+    display: flex;
+    flex-direction: column;
+}
+ 
+.header {
+    padding-top: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center ;
+}
+ 
+ 
+.header .logo {
+    padding-right: 15px;
+    height: 55px;
+}
+ 
+.header .session{
+    padding-left: 2100px;
+    display: flex;
+    gap: 30px;
+    font-size: 35px;
+}
+ 
+.banner .division{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.banner .division .logoname{
+    display: flex;
+    color: #31aed1;
+    font-size: 75px;
+}
+
+.banner .division .menu{
+    display: flex;
+    gap: 35px;
+    padding-left: 150px;
+    font-size: 35px;
+}
+
+.banner .division .menu:hover{
+    transition:color 1.5s;
+    color:#31aed1;
+}
+ 
+.banner .division .btn{
+    background-color: #15c5f7;
+    border-radius: 20px 0;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.banner .main{
+    flex: 1;
+    background: gray;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: space-betwwen;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .left {
+    flex: 1;
+    text-align: justify;
+    margin-left: 20px;
+  }
+  
+  .text-box {
+    position: absolute;
+    top: 38%; 
+    left: 5%; 
+    transform: translateY(-50%); 
+    background-color: transparent; 
+    padding: 20px; 
+    border-radius: 10px;
+    font-family: Dancing;
+    font-size: 60px; 
+    /*color: white;
+    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);*/
+    width: 20%; 
+}
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-right: 100px;
+    margin-top: 30px;
+    justify-content: top; 
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 70px;
+    font-family: Dancing;
+    color: #31aed1;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1.5s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    justify-content: center;
+  }
+  
+  .btn:hover {
+    background-color:rgb(6, 54, 110) 
+
+  }
+
+  /* LOGIN WINDOW  */
+  /* REGISTER WINDOW  */
+  /* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: rgb(219, 125, 140);
+  }
+  
+  /* Conteúdo do modal */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding-left: 5rem;
+    padding-top: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.932);
+    width: 50rem;
+    height: 30rem;
+    text-align: left;
+    background-image: url('../../imgs/LogoYoga2a.png'); 
+    background-position: center; 
+    background-size: cover;
+    color: rgb(219, 125, 140);
+  }
+
+  /* Conteúdo do regModal */
+  .regModal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    /*padding-left: 4rem;*/
+    /*padding-top: 1rem;*/
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.932);
+    width: 70rem;
+    height: 67.5rem;
+    text-align: left;
+    font-family: Dancing;
+    background-image: url('../../imgs/ShivaAI.png');
+    background-position: center;
+    background-size: contain;
+    color: gold;
+  }
+  
+  /* Botão para fechar */
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .btn1 {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-family: Dancing;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1.5s;
+    /*border: 2px solid #31aed1;*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    justify-content: center;
+  }
+
+  .btn2 {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-family: Dancing;
+    color: rgb(219, 125, 140);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1.5s;
+    /*border: 2px solid #31aed1;*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    justify-content: center;
+  }
+
+  .btn1:hover {
+    background-color:rgb(131, 163, 163) 
+
+  }
